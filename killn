@@ -1,0 +1,2 @@
+ progname=`echo $1|sed 's/\([a-zA-Z_]\)\([a-zA-Z_]*\)/[\1]\2/'`
+ ps -ef |grep $progname| awk {'print $2'} | xargs sudo kill -9

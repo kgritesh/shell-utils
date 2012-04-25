@@ -1,0 +1,9 @@
+#!/bin/bash
+CMD="find . -regex \(.+#.*\|.+~.*\|.+\.orig\)"
+if [[ $1 == "show" ]];
+then
+    $CMD
+else
+    $CMD | xargs rm -f -v
+fi
+

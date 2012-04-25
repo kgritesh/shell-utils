@@ -1,0 +1,4 @@
+#!/bin/bash
+echo $1
+readlink -f $1|xsel -b
+readlink -f $1|xsel -p
