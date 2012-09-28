@@ -1,0 +1,6 @@
+DIR="$( cd "$( dirname "$0" )" && pwd )"
+
+for var in "$@"
+do
+    sudo ln -s $DIR/"$var" /usr/bin/
+done
